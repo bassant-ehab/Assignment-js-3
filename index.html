@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    
+    </head>
+
+    <body>
+        
+        <main>
+            <div class="container d-flex flex-column justify-content-center align-content-center">
+                <h1 class="text-center py-5">Bookmarker</h1>
+                <hr>
+                <div class="bookmarkbody" class="w-100 gap-4 d-flex flex-column justify-content-center align-content-center py-5 mt-5 p-3">
+                    <h2 class="text-center"><i class="bi bi-bookmark-fill"></i>Bookmark your favorite sites<i class="bi bi-bookmark-fill"></i></h2>
+                    <div class="site-name mt-2 w-100 d-flex flex-column justify-content-center">
+                        <label for="bookmarkName" class="fw-bold pb-2">
+                            <i class="bi bi-journal-bookmark-fill"></i>  Site Name
+                        </label>
+                        <input type="text" placeholder="Bookmark Name" class="form-control" id="bookmarkName">
+                    </div> 
+                    <br>
+                    <div class="site-url  w-100 d-flex flex-column justify-content-center">
+                        <label for="bookmarkUrl" class="fw-bold pb-2">
+                            <i class="bi bi-link-45deg"></i> Site URL
+                        </label>
+                        <input type="url" placeholder="WebSite URL" class="form-control" id="bookmarkUrl">
+                        <br>
+                        <button class="m-auto btn-submit rounded-2 px-5" onclick="addbookmark()" class="text-center" id="SubmitBtn">Submit</button>
+                    </div>
+                    <hr>
+                    
+                    <div class="table-responsive">
+                        <table class="table mt-4 text-center  bg-light">
+                            <thead>
+                                <tr>
+                                    <th class="text-capitalize">Index</th>
+                                    <th class="text-capitalize">WebSite Name</th>
+                                    <th class="text-capitalize">Visit</th>
+                                    <th class="text-capitalize">Delete</th>
+                                </tr>`
+                            </thead>
+                            <tbody id="tableData">
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                
+            </div>
+            
+
+        </main>
+
+        <script src="./js/main.js"></script>
+        <script src="./js/bootstrap.bundle.min.js"></script>
+
+
+    </body>
+</html>   
